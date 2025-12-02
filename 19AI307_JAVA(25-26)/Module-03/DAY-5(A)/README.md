@@ -1,50 +1,46 @@
-# Ex.No:3(E) INNER CLASS
+# Ex.No:3(F) WRAPPER CLASS
 
 ## AIM:
-
-Show how an inner class works inside an outer class and how it can access outer members.
+Show how wrapper classes convert primitive data types into objects.
 
 ## ALGORITHM :
-
 1. Start the program.
-2. Create an outer class with a variable.
-3. Create an inner class inside the outer class.
-4. Create an object of the inner class using the outer class.
-5. Call the inner class method to display the output.
+2. Declare primitive data types.
+3. Convert them into wrapper class objects.
+4. Use wrapper class methods to process data.
+5. Display the results.
+
 
 ## PROGRAM:
-
-### to implement a InnerClass using Java
+### to implement a Wrapper Class using Java
 
 ## SOURCE CODE:
 
+
 ```java
-class Outer {
-    String msg = "Hello from Inner Class";
-
-    class Inner {
-        void display() {
-            System.out.println(msg);
-        }
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
-        Outer o = new Outer();
-        Outer.Inner in = o.new Inner();
-        in.display();
+        int a = 25;
+        Integer obj = Integer.valueOf(a);
+
+        double b = 12.5;
+        Double obj2 = Double.valueOf(b);
+
+        System.out.println("Integer object: " + obj);
+        System.out.println("Double object: " + obj2);
     }
 }
 ```
 
-## OUTPUT:
 
+
+
+## OUTPUT:
 ```
-Hello from Inner Class
+Integer object: 25
+Double object: 12.5
 ```
+
 
 ## RESULT:
-
-Program executed successfully.
 
