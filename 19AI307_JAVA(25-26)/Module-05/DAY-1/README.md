@@ -16,7 +16,7 @@ Read character data from a byte-based input stream.
 ## PROGRAM:
 #### Program to implement a InputStreamReader using Java
 ## SOURCE CODE:
-
+```
 import java.io.*;
 
 public class InputStreamReaderExample {
@@ -44,10 +44,16 @@ public class InputStreamReaderExample {
         }
     }
 }
-
+```
 ## OUTPUT:
-
+```
+Type Something and press Enter:
+Hello
+Hello
+```
 
 
 ## RESULT:
+Hence the character data from a byte-based input stream has been read successfully
+
 
